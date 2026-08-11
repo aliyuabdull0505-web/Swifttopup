@@ -11,11 +11,11 @@ on:
                   pages: write
                     id-token: write
 
-                    concurrency:
+                concurrency:
                       group: "pages"
                         cancel-in-progress: true
 
-                        jobs:
+                    jobs:
                           build-and-deploy:
                               runs-on: ubuntu-latest
                                   steps:
